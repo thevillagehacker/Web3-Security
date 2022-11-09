@@ -12,3 +12,5 @@
 ## Learn Solidity
 - https://solidity-by-example.org/
 
+## Nahamsec Smart contract Series
+- https://youtube.com/playlist?list=PLKAaMVNxvLmAewUXJp90bbry87r6-KPhk
