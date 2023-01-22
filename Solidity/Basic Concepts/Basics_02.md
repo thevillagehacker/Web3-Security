@@ -142,3 +142,90 @@ contract Event {
 [Solidity by Example](https://solidity-by-example.org/events/)
 
 ## ****Ownable | Solidity 0.8****
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract ownable {
+    address public owner;
+
+    constructor() {
+        owner=msg.sender;
+    }
+    modifier onlyowner {
+        require(msg.sender == owner,  "not owner");
+        _;
+    }
+    function setowner(address _newowner) external onlyowner{
+        require(_newowner != address(0), "invalid address");
+        owner = _newowner;
+    }
+
+    function onlyownercancall () public onlyowner {
+        
+        
+    }
+    function anyonecancall (uint x, uint y) public pure returns (uint) {
+        return x + y;
+    }
+}
+```
+
+## ****Function Outputs | Solidity 0.8****
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract func_out {
+    function returMany() public pure returns (uint ,bool) {
+        return (1, true);
+    }
+    function named() public pure returns (uint x, bool b) {
+        return (1, true);
+    }
+    function assigned() public pure returns (uint x, bool b){
+        x = 12;
+        b = false;
+        x += 1;
+    }
+}
+```
+
+[Solidity by Example](https://solidity-by-example.org/function/)
+
+## ****Array | Solidity 0.8****
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract Array{
+    uint [] public nums = [1, 2, 3];
+    uint [5] public numsFixed = [1, 2, 3, 4, 5];
+
+    function example() external{
+        nums.push(4); // [1, 2, 3, 4]
+        uint x = nums[1];
+        nums[2] = 333; // [1, 2, 333, 4]
+        delete nums[1]; //delete the value from the array [1, 0, 333, 4]
+        nums.pop(); // [1, 0, 333] removed the last element from the array
+        uint len = nums.length;
+
+        // create in memory
+        uint[] memory a = new uint[](5); // 5 is size of the array
+        // fixed sixe array cannot be removed or pushed
+        a[1] = 123;
+    }
+    // function to return the array from the memory
+    function returnMenory() external view returns (uint [] memory){
+        return nums;
+    }
+
+}
+```
+
+## ****Array Remove An Element By Shifting | Solidity 0.8****
+
+[Solidity by Example](https://solidity-by-example.org/array/)
