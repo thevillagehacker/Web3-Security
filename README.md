@@ -26,5 +26,8 @@ https://wooded-meter-1d8.notion.site/0e85e02c5ed34df3855ea9f3ca40f53b?v=22e5e2c5
 [Ethernaut Solutions](https://cmichel.io/ethernaut-solutions/)
 [Capture The Ether Solutions](https://cmichel.io/capture-the-ether-solutions/)
 
-## Paradigm CTF solution
+# Paradigm CTF solution
 [Paradigm CTF 2023 Solutions](https://cmichel.io/paradigm-ctf-2021-solutions/)
+
+# CTF Writeups
+[Blockchain CTF Writeups](/CTF/Block%20chain_ctf-writeups.md)
