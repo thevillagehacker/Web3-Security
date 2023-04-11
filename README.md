@@ -34,3 +34,6 @@ https://wooded-meter-1d8.notion.site/0e85e02c5ed34df3855ea9f3ca40f53b?v=22e5e2c5
 
 ## Blockchain Development
 [Blockchain development](/BlockChain/Development.md)
+
+## Web3.0 Security Resources
+[Awesome-web3-Security](https://github.com/thevillagehacker/Awesome-web3-Security)
