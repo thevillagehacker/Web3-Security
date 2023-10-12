@@ -1,4 +1,4 @@
-# Web 3 Security resource
+# Web 3 Security Resource
 
 ## **Decentralized Application Security Project Top 10 of 2018**
 [DASP - TOP 10](https://dasp.co/)
